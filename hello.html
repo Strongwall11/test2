@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Hello</title>
+        <style>
+            body {
+                background-color: aquamarine;
+            }
+            div {
+                background-color: chartreuse;
+                padding: 20px;
+                font-family: sans-serif;
+                font-weight: bold;
+                text-align: center;
+                max-width: 500px;
+                border-radius: 5px;
+                margin: 0 auto;
+                margin-top: 30px;
+            }
+
+            p {
+                font-size: 3em;
+                margin: 20px;
+            }
+            button {
+                background-color: blueviolet;
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>
+                ??
+            </p>
+            <button>
+                click here
+            </button>
+        </div>
+
+        <script>
+            
+            let thingToPrint = ""
+            function drawText() {
+                thingToPrint += "#";
+                document.writeln(thingToPrint);
+            }
+
+            setInterval(drawText, 2000);
+        </script>
+    </body>
+</html>
